@@ -1,7 +1,7 @@
 'use client';
 
-import { Reveal, Stagger, StaggerItem, scaleIn, fadeIn } from '@/components/motion-kit';
 import { ArrowUpRight } from 'lucide-react';
+import { Reveal, Stagger, StaggerItem, scaleIn, fadeIn } from './motion-kit';
 import SectionLabel from './SectionLabel';
 
 const services = [

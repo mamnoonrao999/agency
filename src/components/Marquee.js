@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from '@/components/motion-kit';
+import { motion } from 'framer-motion';
 
 export default function Marquee() {
   const tags = ['Brand Strategy', 'Web Design', 'Product UI/UX', 'Visual Identity', 'Motion & 3D', 'SEO & Growth'];
@@ -11,7 +11,7 @@ export default function Marquee() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="py-16 overflow-hidden"
+      className="py-16 overflow-hidden glass-dark"
     >
       <motion.div
         className="flex gap-6 whitespace-nowrap items-center"

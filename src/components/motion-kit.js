@@ -6,7 +6,12 @@ export const EASE = [0.22, 0.7, 0.2, 1];
 
 export const fadeUp = {
   hidden: { opacity: 0, y: 28, filter: 'blur(6px)' },
-  show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.7, ease: EASE } },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: 'blur(0px)',
+    transition: { duration: 0.7, ease: EASE },
+  },
 };
 
 export const fadeIn = {
@@ -16,7 +21,12 @@ export const fadeIn = {
 
 export const scaleIn = {
   hidden: { opacity: 0, scale: 0.94, y: 18 },
-  show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.65, ease: EASE } },
+  show: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.65, ease: EASE },
+  },
 };
 
 export const container = (stagger = 0.09, delay = 0) => ({

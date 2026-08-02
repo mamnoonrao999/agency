@@ -1,7 +1,8 @@
 'use client';
 
-import { Reveal, Stagger, StaggerItem, scaleIn, fadeUp, motion } from '@/components/motion-kit'; // ← motion imported
+import { motion } from 'framer-motion';
 import { ArrowUpRight, Mail, Phone, MapPin } from 'lucide-react';
+import { Reveal, Stagger, StaggerItem, scaleIn, fadeUp } from './motion-kit';
 import SectionLabel from './SectionLabel';
 
 function Field({ label, ...rest }) {
@@ -21,7 +22,7 @@ export default function Contact() {
     <section id="contact" className="py-28 px-6 sm:px-8">
       <div className="mx-auto max-w-7xl">
         <Reveal variants={scaleIn} className="glass-dark rounded-[2rem] text-white p-8 sm:p-16 relative overflow-hidden">
-          <motion.div // ← now motion is defined
+          <motion.div
             className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-gradient-to-br from-sky-400/40 to-pink-300/30 blur-3xl"
             animate={{ scale: [1, 1.15, 1], x: [0, -30, 0], y: [0, 20, 0] }}
             transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
@@ -77,7 +78,7 @@ export default function Contact() {
                 variants={fadeUp}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="mt-4 w-full inline-flex items-center justify-center gap-3 bg-white text-ink rounded-full px-6 py-4 font-semibold hover:bg-white/90 transition"
+                className="mt-4 w-full inline-flex items-center justify-center gap-3 bg-white/10 text-ink rounded-full px-6 py-4 font-semibold hover:bg-white/20 transition"
               >
                 Send inquiry <ArrowUpRight className="w-4 h-4" />
               </motion.button>

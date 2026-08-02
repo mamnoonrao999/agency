@@ -1,6 +1,7 @@
 'use client';
 
-import { Reveal, Stagger, StaggerItem, scaleIn, motion } from '@/components/motion-kit'; // <-- motion imported
+import { motion } from 'framer-motion';
+import { Reveal, Stagger, StaggerItem, scaleIn, EASE } from './motion-kit';
 import SectionLabel from './SectionLabel';
 
 const stats = [
@@ -16,7 +17,7 @@ function Counter({ value }) {
       initial={{ opacity: 0, y: 14 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6, ease: [0.22, 0.7, 0.2, 1] }}
+      transition={{ duration: 0.6, ease: EASE }}
       className="text-3xl sm:text-4xl font-extrabold text-ink tracking-tight"
     >
       {value}
@@ -49,7 +50,7 @@ export default function About() {
           <StaggerItem variants={scaleIn}>
             <div className="glass-panel rounded-3xl p-8 grid grid-cols-2 sm:grid-cols-4 gap-6 mt-6">
               {stats.map((s) => (
-                <motion.div key={s.l} whileHover={{ y: -4 }}> {/* fixed: motion.div */}
+                <motion.div key={s.l} whileHover={{ y: -4 }}>
                   <Counter value={s.v} />
                   <div className="text-sm text-ink-soft mt-1">{s.l}</div>
                 </motion.div>

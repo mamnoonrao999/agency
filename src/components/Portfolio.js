@@ -1,23 +1,20 @@
 'use client';
 
-import { Reveal, Stagger, StaggerItem, scaleIn, motion } from '@/components/motion-kit'; // ← motion added
+import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
+import { Reveal, Stagger, StaggerItem, scaleIn, EASE } from './motion-kit';
 import SectionLabel from './SectionLabel';
 
-// Use absolute paths (files must be in public/assets/)
 const work1 = '/assets/work-1.jpg';
 const work2 = '/assets/work-2.jpg';
 const work3 = '/assets/work-3.jpg';
 const work4 = '/assets/work-4.jpg';
-
 const works = [
   { img: work1, t: 'Nimble — SaaS rebrand', tag: 'Brand · Web' },
   { img: work2, t: 'Northkin Stationery', tag: 'Identity · Print' },
   { img: work3, t: 'Aurora Mobile App', tag: 'Product · UI/UX' },
   { img: work4, t: 'Petal Skincare', tag: 'Packaging · Web' },
 ];
-
-const EASE = [0.22, 0.7, 0.2, 1];
 
 export default function Portfolio() {
   return (
@@ -30,7 +27,7 @@ export default function Portfolio() {
               Selected work, <span className="font-serif-italic font-normal">real outcomes.</span>
             </h2>
           </Reveal>
-          <motion.a // ← changed to motion.a
+          <motion.a
             href="#"
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}

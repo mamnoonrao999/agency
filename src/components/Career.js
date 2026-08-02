@@ -1,7 +1,8 @@
 'use client';
 
-import { Reveal, Stagger, StaggerItem, fadeUp, motion } from '@/components/motion-kit'; // ← motion added
+import { motion } from 'framer-motion';
 import { Check, ArrowUpRight } from 'lucide-react';
+import { Reveal, Stagger, StaggerItem, fadeUp, EASE } from './motion-kit';
 import SectionLabel from './SectionLabel';
 
 const openings = [
@@ -10,10 +11,7 @@ const openings = [
   { t: 'Webflow Developer', l: 'Remote · Contract', d: 'Engineering' },
   { t: 'Motion Designer', l: 'Remote · Full-time', d: 'Motion' },
 ];
-
 const perks = ['Remote-first', 'Equity for everyone', 'Learning budget', '4 weeks PTO'];
-
-const EASE = [0.22, 0.7, 0.2, 1];
 
 export default function Career() {
   return (
@@ -33,7 +31,7 @@ export default function Career() {
             <StaggerItem>
               <div className="flex flex-wrap gap-2 pt-2">
                 {perks.map((p) => (
-                  <motion.span // ← changed to motion.span
+                  <motion.span
                     key={p}
                     whileHover={{ y: -3, scale: 1.04 }}
                     className="glass-pill inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm text-ink"
@@ -48,7 +46,7 @@ export default function Career() {
         <Stagger className="glass-panel rounded-3xl overflow-hidden" stagger={0.08}>
           {openings.map((o, i) => (
             <StaggerItem key={o.t} variants={fadeUp}>
-              <motion.a // ← changed to motion.a (was plain <a>)
+              <motion.a
                 href="#contact"
                 className={`flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-6 sm:p-8 hover:bg-white/30 transition ${i !== 0 ? 'border-t border-white/40' : ''}`}
                 whileHover={{ x: 8 }}

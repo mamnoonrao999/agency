@@ -1,6 +1,7 @@
 'use client';
 
-import { Reveal, Stagger, StaggerItem, scaleIn, motion } from '@/components/motion-kit'; // ← motion added
+import { motion } from 'framer-motion';
+import { Reveal, Stagger, StaggerItem, scaleIn, EASE } from './motion-kit';
 import SectionLabel from './SectionLabel';
 
 const steps = [
@@ -9,8 +10,6 @@ const steps = [
   { n: '03', t: 'Design', d: 'Concepts, identity systems and interfaces refined in tight loops until every detail earns its place.' },
   { n: '04', t: 'Deliver', d: 'We ship, measure and iterate. Then we hand over a system your team can actually maintain.' },
 ];
-
-const EASE = [0.22, 0.7, 0.2, 1];
 
 export default function Process() {
   return (
@@ -25,7 +24,7 @@ export default function Process() {
             {steps.map((s) => (
               <StaggerItem key={s.n}>
                 <div className="relative pt-6">
-                  <motion.span // ← changed to motion.span
+                  <motion.span
                     className="absolute top-0 left-0 h-px bg-white/40 block"
                     initial={{ width: '0%' }}
                     whileInView={{ width: '100%' }}

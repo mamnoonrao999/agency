@@ -1,7 +1,8 @@
 'use client';
 
-import { Reveal, Stagger, StaggerItem, scaleIn, motion } from '@/components/motion-kit'; // ← motion added
+import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
+import { Reveal, Stagger, StaggerItem, scaleIn, EASE } from './motion-kit';
 import SectionLabel from './SectionLabel';
 
 const testimonials = [
@@ -9,8 +10,6 @@ const testimonials = [
   { q: 'The most thoughtful, fast and detail-obsessed team we\'ve worked with. Every deliverable felt finished.', a: 'Marcus Rivera', r: 'Head of Product, Aurora' },
   { q: 'They translated a messy vision into a clear brand and a website that actually performs. Worth every cent.', a: 'Lina Park', r: 'Founder, Petal' },
 ];
-
-const EASE = [0.22, 0.7, 0.2, 1];
 
 export default function Testimonials() {
   return (
@@ -28,7 +27,7 @@ export default function Testimonials() {
               <figure className="glass-card rounded-3xl p-8 flex flex-col gap-6 h-full">
                 <div className="flex gap-1">
                   {Array.from({ length: 5 }).map((_, i) => (
-                    <motion.span // ← changed to motion.span
+                    <motion.span
                       key={i}
                       initial={{ opacity: 0, scale: 0.4 }}
                       whileInView={{ opacity: 1, scale: 1 }}

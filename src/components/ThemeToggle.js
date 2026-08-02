@@ -1,9 +1,8 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import { useTheme } from './ThemeProvider';
-import { motion } from '@/components/motion-kit';
 
-// Simple Sun icon (custom SVG)
 const SunIcon = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <circle cx="12" cy="12" r="5" />
@@ -26,7 +25,6 @@ const MoonIcon = ({ className }) => (
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
-
   return (
     <motion.button
       onClick={toggleTheme}
