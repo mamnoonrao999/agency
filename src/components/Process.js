@@ -13,14 +13,14 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="py-28 px-6 sm:px-8">
+    <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <Reveal variants={scaleIn} className="glass-dark rounded-[2rem] p-8 sm:p-16 text-white">
+        <Reveal variants={scaleIn} className="glass-dark rounded-[2rem] p-6 sm:p-8 lg:p-16 text-white">
           <SectionLabel>Process</SectionLabel>
-          <h2 className="mt-6 text-4xl sm:text-5xl font-serif font-normal tracking-[-0.02em] leading-[1.05] max-w-3xl">
+          <h2 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-serif font-normal tracking-[-0.02em] leading-[1.05] max-w-3xl">
             A simple <span className="font-serif-italic font-normal text-white/90">four-step</span> way of working.
           </h2>
-          <Stagger className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16" stagger={0.12}>
+          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mt-12 md:mt-16" stagger={0.12}>
             {steps.map((s) => (
               <StaggerItem key={s.n}>
                 <div className="relative pt-6">
@@ -31,9 +31,9 @@ export default function Process() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.9, ease: EASE }}
                   />
-                  <div className="text-sm font-mono text-white/50 mb-6">{s.n}</div>
-                  <h3 className="text-2xl font-bold tracking-tight mb-3">{s.t}</h3>
-                  <p className="text-white/70 leading-relaxed">{s.d}</p>
+                  <div className="text-sm font-mono text-white/50 mb-4 sm:mb-6">{s.n}</div>
+                  <h3 className="text-xl sm:text-2xl font-bold tracking-tight mb-2 sm:mb-3">{s.t}</h3>
+                  <p className="text-sm sm:text-base text-white/70 leading-relaxed">{s.d}</p>
                 </div>
               </StaggerItem>
             ))}

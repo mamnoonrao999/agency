@@ -28,7 +28,7 @@ export default function Page() {
           <ScrollProgress />
           <Nav />
           <Hero />
-          <Marquee />
+          {/* <Marquee /> */}
           <About />
           <Services />
           <Portfolio />
@@ -520,7 +520,7 @@ export default function Page() {
 //         <Stagger className="lg:col-span-7 space-y-6" stagger={0.12}>
 //           <StaggerItem>
 //             <p className="text-lg text-ink-soft leading-relaxed">
-//               Elevare is a small, senior team based across three continents. We partner with founders and product teams to ship brands and digital products that move metrics — not just mood boards.
+//               GrowthStack Studio is a small, senior team based across three continents. We partner with founders and product teams to ship brands and digital products that move metrics — not just mood boards.
 //             </p>
 //           </StaggerItem>
 //           <StaggerItem>
@@ -698,7 +698,7 @@ export default function Page() {
 // // ─── Testimonials ────────────────────────────────────────────────────
 // function Testimonials() {
 //   const testimonials = [
-//     { q: "Elevare didn't just redesign our brand — they rebuilt how customers feel about us. Conversions doubled in a quarter.", a: 'Sarah Chen', r: 'CEO, Northkin' },
+//     { q: "GrowthStack Studio didn't just redesign our brand — they rebuilt how customers feel about us. Conversions doubled in a quarter.", a: 'Sarah Chen', r: 'CEO, Northkin' },
 //     { q: 'The most thoughtful, fast and detail-obsessed team we\'ve worked with. Every deliverable felt finished.', a: 'Marcus Rivera', r: 'Head of Product, Aurora' },
 //     { q: 'They translated a messy vision into a clear brand and a website that actually performs. Worth every cent.', a: 'Lina Park', r: 'Founder, Petal' },
 //   ];
@@ -849,7 +849,7 @@ export default function Page() {
 //               <StaggerItem>
 //                 <ul className="mt-10 space-y-4 text-white/80">
 //                   {[
-//                     { I: Mail, t: 'hello@elevare.studio' },
+//                     { I: Mail, t: 'hello@GrowthStack Studio.studio' },
 //                     { I: Phone, t: '+1 (415) 555-0119' },
 //                     { I: MapPin, t: 'San Francisco · Lisbon · Singapore' },
 //                   ].map(({ I, t }) => (
@@ -995,7 +995,7 @@ export default function Page() {
 //         </StaggerItem>
 //       </Stagger>
 //       <Reveal variants={fadeIn} className="mx-auto max-w-7xl mt-10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink-soft">
-//         <p>© {new Date().getFullYear()} Elevare Studio. All rights reserved.</p>
+//         <p>© {new Date().getFullYear()} GrowthStack Studio Studio. All rights reserved.</p>
 //         <p>Crafted with care in California.</p>
 //       </Reveal>
 //     </footer>
