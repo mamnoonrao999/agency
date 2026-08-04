@@ -51,7 +51,7 @@ export default function Nav() {
           href="#contact"
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.96 }}
-          className="rounded-full pl-5 pr-1.5 py-1.5 flex items-center gap-3 text-sm font-medium text-ink hover:bg-white/80 transition group"
+          className="rounded-full pl-5 pr-1.5 py-1.5 flex items-center gap-3 text-sm font-medium text-ink hover:bg-white/30 transition group"
         >
           Get started
           <span className="grid place-items-center w-9 h-9 rounded-full bg-ink text-white overflow-hidden">
