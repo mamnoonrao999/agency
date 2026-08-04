@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section id="top" className="relative min-h-screen flex flex-col">
       <div className="flex-1 flex items-start justify-center">
-        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 lg:pt-40 pb-12 sm:pb-16 lg:pb-20">
+        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 lg:pt-40 md:pb-16 sm:pb-12 lg:pb-20 xl:pb-20">
           {/* Badge – smaller on mobile */}
           <div className="flex justify-center pb-8 sm:pb-12 lg:pb-20 xl:pb-10">
             <motion.div
