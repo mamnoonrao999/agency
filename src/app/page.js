@@ -23,7 +23,7 @@ export default function Page() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="min-h-screen relative z-10"
+          className="min-h-screen relative z-10 max-w-7xl mx-auto px-6 sm:max-w-7xl sm:mx-auto sm:px-4 md:max-w-7xl md:mx-auto md:px-4 lg:max-w-7xl lg:mx-auto lg:px-0 xl:max-w-7xl xl:mx-auto xl:px-0 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0"
         >
           <ScrollProgress />
           <Nav />
