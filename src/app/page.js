@@ -23,7 +23,7 @@ export default function Page() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="min-h-screen relative z-10 max-w-7xl mx-auto px-6 sm:max-w-7xl sm:mx-auto sm:px-4 md:max-w-7xl md:mx-auto md:px-4 lg:max-w-7xl lg:mx-auto lg:px-0 xl:max-w-7xl xl:mx-auto xl:px-0 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0"
+          className="min-h-screen relative z-10 w-full overflow-x-hidden"
         >
           <ScrollProgress />
           <Nav />
@@ -42,6 +42,54 @@ export default function Page() {
     </ThemeProvider>
   );
 }
+
+
+
+
+// 'use client';
+
+// import { AnimatePresence, motion } from 'framer-motion';
+// import { ThemeProvider } from '@/components/ThemeProvider';
+// import ScrollProgress from '@/components/ScrollProgress';
+// import Nav from '@/components/Nav';
+// import Hero from '@/components/Hero';
+// import Marquee from '@/components/Marquee';
+// import About from '@/components/About';
+// import Services from '@/components/Services';
+// import Portfolio from '@/components/Portfolio';
+// import Process from '@/components/Process';
+// import Testimonials from '@/components/Testimonials';
+// import Career from '@/components/Career';
+// import Contact from '@/components/Contact';
+// import Footer from '@/components/Footer';
+
+// export default function Page() {
+//   return (
+//     <ThemeProvider>
+//       <AnimatePresence>
+//         <motion.div
+//           initial={{ opacity: 0 }}
+//           animate={{ opacity: 1 }}
+//           transition={{ duration: 0.5 }}
+//           className="min-h-screen relative z-10 max-w-7xl mx-auto px-6 sm:max-w-7xl sm:mx-auto sm:px-4 md:max-w-7xl md:mx-auto md:px-4 lg:max-w-7xl lg:mx-auto lg:px-0 xl:max-w-7xl xl:mx-auto xl:px-0 2xl:max-w-7xl 2xl:mx-auto 2xl:px-0"
+//         >
+//           <ScrollProgress />
+//           <Nav />
+//           <Hero />
+//           {/* <Marquee /> */}
+//           <About />
+//           <Services />
+//           <Portfolio />
+//           <Process />
+//           <Testimonials />
+//           <Career />
+//           <Contact />
+//           <Footer />
+//         </motion.div>
+//       </AnimatePresence>
+//     </ThemeProvider>
+//   );
+// }
 
 
 
