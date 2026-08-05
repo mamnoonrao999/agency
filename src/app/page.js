@@ -25,7 +25,7 @@ export default function Page() {
           transition={{ duration: 0.5 }}
           className="min-h-screen relative z-10 w-full overflow-x-hidden"
         >
-          <ScrollProgress />
+          {/* <ScrollProgress /> */}
           <Nav />
           <Hero />
           {/* <Marquee /> */}
@@ -34,7 +34,7 @@ export default function Page() {
           <Portfolio />
           <Process />
           <Testimonials />
-          <Career />
+          {/* <Career /> */}
           <Contact />
           <Footer />
         </motion.div>
