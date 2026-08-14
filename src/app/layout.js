@@ -22,8 +22,8 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata = {
-  title: 'GrowthStack Studio — Creative Digital Agency',
-  description: 'GrowthStack Studio is a creative agency turning ideas into impactful digital products.',
+  title: 'Scalentiq AutoWebs Studio — Creative Digital Agency',
+  description: 'Scalentiq AutoWebs Studio is a creative agency turning ideas into impactful digital products.',
   // ... other metadata
 };
 

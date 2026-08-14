@@ -101,7 +101,7 @@ export default function Footer() {
         </StaggerItem>
       </Stagger>
       <Reveal variants={fadeIn} className="mx-auto max-w-7xl mt-6 sm:mt-10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-ink-soft">
-        <p>© {new Date().getFullYear()} GrowthStack Studio. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Scalentiq AutoWebs Studio. All rights reserved.</p>
         <p>Crafted with care in California.</p>
       </Reveal>
     </footer>

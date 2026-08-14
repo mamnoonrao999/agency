@@ -39,7 +39,7 @@ export default function About() {
         <Stagger className="lg:col-span-7 space-y-4 sm:space-y-6" stagger={0.12}>
           <StaggerItem>
             <p className="text-base sm:text-lg text-ink-soft leading-relaxed">
-              GrowthStack Studio is a small, senior team based across three continents. We partner with founders and product teams to ship brands and digital products that move metrics — not just mood boards.
+              Scalentiq AutoWebs Studio is a small, senior team based across three continents. We partner with founders and product teams to ship brands and digital products that move metrics — not just mood boards.
             </p>
           </StaggerItem>
           <StaggerItem>

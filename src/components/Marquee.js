@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 export default function Marquee() {
-  const tags = ['Brand Strategy', 'Web Design', 'Product UI/UX', 'Visual Identity', 'Motion & 3D', 'SEO & Growth'];
+  const tags = ['Brand Strategy', 'Web Design', 'Product UI/UX', 'Visual Identity', 'Motion & 3D', 'SEO & Scalentiq'];
   const items = [...tags, ...tags, ...tags, ...tags];
   return (
     <motion.div

@@ -11,8 +11,9 @@ const nav = [
   { label: 'About', href: '#about' },
   { label: 'Portfolio', href: '#portfolio' },
   { label: 'Service', href: '#service' },
-  { label: 'Career', href: '#career' },
+  // { label: 'Career', href: '#career' },
   { label: 'Contact', href: '#contact' },
+  { label: 'FAQ', href: '#faq' },
 ];
 
 export default function Nav() {

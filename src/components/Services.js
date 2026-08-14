@@ -10,7 +10,7 @@ const services = [
   { n: '03', t: 'Product & UI/UX', d: 'End-to-end product design — research, flows and pixel-perfect interfaces that ship.' },
   { n: '04', t: 'Visual Identity', d: 'Logos, type systems and art direction that translate strategy into something you can feel.' },
   { n: '05', t: 'Motion & 3D', d: 'Animation, micro-interactions and 3D moments that bring your interfaces to life.' },
-  { n: '06', t: 'SEO & Growth', d: 'Technical SEO, content frameworks and growth loops that compound over time.' },
+  { n: '06', t: 'SEO & Scalentiq', d: 'Technical SEO, content frameworks and Scalentiq loops that compound over time.' },
 ];
 
 export default function Services() {

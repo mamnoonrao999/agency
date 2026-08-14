@@ -165,7 +165,7 @@ export default function Portfolio() {
             </h2>
           </Reveal>
           <motion.a
-            href="#"
+            href="/portfolio"
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -182,7 +182,7 @@ export default function Portfolio() {
                 href={w.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block rounded-3xl h-full transition hover:shadow-sm"
+                className="group block rounded-3xl h-full transition hover:shadow-sm glass-pill p-2"
               >
                 <div className="overflow-hidden rounded-2xl">
                   <motion.img

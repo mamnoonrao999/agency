@@ -6,7 +6,7 @@ import { Reveal, Stagger, StaggerItem, scaleIn, EASE } from './motion-kit';
 import SectionLabel from './SectionLabel';
 
 const testimonials = [
-  { q: "GrowthStack Studio didn't just redesign our brand they rebuilt how customers feel about us. Conversions doubled in a quarter.", a: 'Sarah Chen', r: 'CEO, Northkin' },
+  { q: "Scalentiq AutoWebs Studio didn't just redesign our brand they rebuilt how customers feel about us. Conversions doubled in a quarter.", a: 'Sarah Chen', r: 'CEO, Northkin' },
   { q: 'The most thoughtful, fast and detail-obsessed team we\'ve worked with. Every deliverable felt finished.', a: 'Marcus Rivera', r: 'Head of Product, Aurora' },
   { q: 'They translated a messy vision into a clear brand and a website that actually performs. Worth every cent.', a: 'Lina Park', r: 'Founder, Petal' },
 ];
