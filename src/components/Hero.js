@@ -52,18 +52,18 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.6, ease: EASE }}
-              className="mt-6 sm:mt-8 flex flex-wrap items-center gap-3 sm:gap-4"
+              className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
             >
               <a
                 href="#contact"
-                className="group inline-flex items-center gap-2 glass-pill rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-medium text-ink hover:bg-white/60 transition-all duration-300 border border-ink/10"
+                className="group inline-flex items-center justify-center gap-2 glass-pill rounded-full px-5 py-3 sm:px-6 text-sm font-medium text-ink hover:bg-white/60 transition-all duration-300 border border-ink/10 w-full sm:w-auto"
               >
                 Get My Free Website Audit
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:rotate-45" />
               </a>
               <a
                 href="#portfolio"
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-soft hover:text-ink transition-colors duration-300 py-2.5 sm:py-3"
+                className="inline-flex items-center justify-center gap-1.5 text-sm font-medium text-ink-soft hover:text-ink transition-colors duration-300 py-3 w-full sm:w-auto"
               >
                 See our work →
               </a>
