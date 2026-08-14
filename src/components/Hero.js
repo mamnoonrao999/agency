@@ -52,18 +52,18 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.6, ease: EASE }}
-              className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
+              className="mt-6 sm:mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4"
             >
               <a
                 href="#contact"
-                className="group inline-flex items-center justify-center gap-2 glass-pill rounded-full px-5 py-3 sm:px-6 text-sm font-medium text-ink hover:bg-white/60 transition-all duration-300 border border-ink/10 w-full sm:w-auto"
+                className="group inline-flex items-center gap-2 glass-pill rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-medium text-ink hover:bg-white/60 transition-all duration-300 border border-ink/10"
               >
                 Get My Free Website Audit
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:rotate-45" />
               </a>
               <a
                 href="#portfolio"
-                className="inline-flex items-center justify-center gap-1.5 text-sm font-medium text-ink-soft hover:text-ink transition-colors duration-300 py-3 w-full sm:w-auto"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-soft hover:text-ink transition-colors duration-300 pl-5 sm:pl-0"
               >
                 See our work →
               </a>
@@ -72,7 +72,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.6, ease: EASE }}
-              className="mt-4 text-xs text-ink-soft"
+              className="mt-4 text-xs text-ink-soft pl-5 sm:pl-0"
             >
               60 seconds · No credit card · Personalized report
             </motion.div>
@@ -85,31 +85,31 @@ export default function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.0, duration: 0.6, ease: EASE }}
-        className="w-full border-t border-ink/5 py-4 sm:py-6 overflow-hidden"
+        className="w-full border-t border-ink/5 py-3 sm:py-6 overflow-hidden px-4 sm:px-6 lg:px-8"
       >
         <motion.div
-          className="flex gap-4 sm:gap-6 lg:gap-12 whitespace-nowrap items-center"
+          className="flex gap-3 sm:gap-6 lg:gap-12 whitespace-nowrap items-center"
           animate={{ x: ['0%', '-50%'] }}
           transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
           whileHover={{ animationPlayState: 'paused' }}
           style={{ width: 'max-content' }}
         >
           {[...Array(4)].map((_, setIndex) => (
-            <div key={setIndex} className="flex gap-4 sm:gap-6 lg:gap-12 items-center">
-              <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs lg:text-sm text-ink-soft">
-                <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 lg:w-4 lg:h-4 text-ink-soft" />
+            <div key={setIndex} className="flex gap-3 sm:gap-6 lg:gap-12 items-center flex-shrink-0">
+              <div className="flex items-center gap-1 sm:gap-2 text-[10px] sm:text-xs lg:text-sm text-ink-soft flex-shrink-0">
+                <Sparkles className="hidden sm:block w-3.5 h-3.5 lg:w-4 lg:h-4 text-ink-soft" />
                 <span>Startup specialists</span>
               </div>
-              <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs lg:text-sm text-ink-soft">
-                <Zap className="w-3 h-3 sm:w-3.5 sm:h-3.5 lg:w-4 lg:h-4 text-ink-soft" />
+              <div className="flex items-center gap-1 sm:gap-2 text-[10px] sm:text-xs lg:text-sm text-ink-soft flex-shrink-0">
+                <Zap className="hidden sm:block w-3.5 h-3.5 lg:w-4 lg:h-4 text-ink-soft" />
                 <span>From 0 → 1</span>
               </div>
-              <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs lg:text-sm text-ink-soft">
-                <TrendingUp className="w-3 h-3 sm:w-3.5 sm:h-3.5 lg:w-4 lg:h-4 text-ink-soft" />
+              <div className="flex items-center gap-1 sm:gap-2 text-[10px] sm:text-xs lg:text-sm text-ink-soft flex-shrink-0">
+                <TrendingUp className="hidden sm:block w-3.5 h-3.5 lg:w-4 lg:h-4 text-ink-soft" />
                 <span>Built to scale</span>
               </div>
-              <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs lg:text-sm text-ink-soft">
-                <Check className="w-3 h-3 sm:w-3.5 sm:h-3.5 lg:w-4 lg:h-4 text-ink-soft" />
+              <div className="flex items-center gap-1 sm:gap-2 text-[10px] sm:text-xs lg:text-sm text-ink-soft flex-shrink-0">
+                <Check className="hidden sm:block w-3.5 h-3.5 lg:w-4 lg:h-4 text-ink-soft" />
                 <span>100% client satisfaction</span>
               </div>
             </div>
