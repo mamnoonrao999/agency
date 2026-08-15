@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section id="top" className="relative flex flex-col min-h-screen">
       <div className="flex flex-1 items-center justify-center pb-1 sm:pb-16 md:pb-20 lg:pb-22">
-        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-0 sm:pt-32 sm:pt-32 lg:pt-35 -mt-14 sm:mt-0 sm:mt-0 lg:mt-0">
+        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-6 sm:pt-32 sm:pt-32 lg:pt-35 -mt-18 sm:mt-0 sm:mt-0 lg:mt-0">
           {/* Badge */}
           <div className="flex justify-center pb-6 sm:pb-10 lg:pb-14">
             <motion.div
