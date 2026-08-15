@@ -21,7 +21,7 @@ export default function Services() {
           <Reveal>
             <SectionLabel>Services</SectionLabel>
             <h2 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-serif font-normal tracking-[-0.02em] text-ink leading-[1.1] max-w-2xl">
-              Everything you need <span className="font-serif-italic font-normal">to launch</span> and grow.
+              Everything you need <span className="font-serif-italic font-normal text-blue-600">to launch</span> and grow.
             </h2>
           </Reveal>
           <Reveal delay={0.15} variants={fadeIn}>

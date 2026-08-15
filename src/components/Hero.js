@@ -36,7 +36,7 @@ export default function Hero() {
             >
               Turn Your Website Into
               <br />
-              <span className="font-serif-italic font-normal">Your Best Salesperson.</span>
+              <span className="font-serif-italic font-normal text-blue-600">Your Best Salesperson.</span>
             </motion.h1>
 
             <motion.p
