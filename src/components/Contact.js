@@ -75,7 +75,7 @@ export default function Contact() {
               </StaggerItem>
               <StaggerItem>
                 <h2 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-6xl font-serif font-normal tracking-[-0.02em] leading-[1.05]">
-                  Let's build <span className="font-serif-italic font-normal">something</span> worth talking about.
+                  Let's build <span className="font-serif-italic font-normal text-blue-600">something</span> worth talking about.
                 </h2>
               </StaggerItem>
               <StaggerItem>
@@ -172,7 +172,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={status.loading}
-                className="mt-4 w-full inline-flex items-center justify-center gap-2 bg-white/10 text-white rounded-full px-6 py-3.5 sm:py-4 font-semibold hover:bg-white/20 transition disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
+                className="mt-4 w-full inline-flex items-center justify-center gap-2 bg-blue-600 text-white rounded-full px-6 py-3.5 sm:py-4 font-semibold hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
               >
                 {status.loading ? (
                   'Sending…'

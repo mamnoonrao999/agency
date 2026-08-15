@@ -8,7 +8,7 @@ import ThemeToggle from './ThemeToggle';
 import { EASE } from './motion-kit';
 
 const nav = [
-  { label: 'About', href: '#about' },
+  { label: 'About', href: '/about' },
   { label: 'Portfolio', href: '#portfolio' },
   { label: 'Service', href: '#service' },
   // { label: 'Career', href: '#career' },

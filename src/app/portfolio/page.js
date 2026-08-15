@@ -85,7 +85,7 @@ export default function PortfolioPage() {
             <SectionLabel>Portfolio</SectionLabel>
             <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-serif font-normal tracking-[-0.02em] text-ink leading-[1.08]">
               Our work speaks <br />
-              <span className="font-serif-italic font-normal text-ink-soft">for itself.</span>
+              <span className="font-serif-italic font-normal text-ink-soft text-blue-600">for itself.</span>
             </h1>
             <p className="mt-4 text-lg text-ink-soft max-w-2xl font-light leading-relaxed">
               A curated selection of projects that pushed boundaries and delivered real results for our clients.
@@ -158,7 +158,7 @@ export default function PortfolioPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.02 }}
-                    className="glass-pill inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-ink mt-2"
+                    className="bg-blue-600 inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-white mt-2"
                   >
                     Visit project <ArrowUpRight className="w-4 h-4" />
                   </motion.a>
@@ -180,7 +180,7 @@ export default function PortfolioPage() {
             <motion.a
               href="#contact"
               whileHover={{ scale: 1.04 }}
-              className="glass-pill inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium text-ink mt-6"
+              className="bg-blue-600 inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium text-white mt-6"
             >
               Get in touch <ArrowUpRight className="w-4 h-4" />
             </motion.a>

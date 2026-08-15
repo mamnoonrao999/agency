@@ -83,7 +83,7 @@ export default function Faq() {
           <div className="text-center">
             <SectionLabel>FAQ</SectionLabel>
             <h2 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-serif font-normal tracking-[-0.02em] text-ink leading-[1.05]">
-              Frequently asked <span className="font-serif-italic font-normal">questions</span>
+              Frequently asked <span className="font-serif-italic font-normal text-blue-600">questions</span>
             </h2>
             <p className="mt-4 text-sm sm:text-base text-ink-soft max-w-2xl mx-auto">
               Everything you need to know before getting started.

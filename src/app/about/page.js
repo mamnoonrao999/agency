@@ -16,28 +16,28 @@ const stats = [
 // ─── Team ──────────────────────────────────────────────
 const team = [
   {
-    name: 'Alex Rivera',
-    role: 'Founder & Creative Director',
+    name: 'Mannoon Hussain',
+    role: 'Founder & CEO',
     bio: '15 years in brand and product design. Formerly at IDEO and Apple.',
-    initials: 'AR',
+    initials: 'MH',
   },
   {
-    name: 'Dr. Jordan Lee',
+    name: 'Moiz Shah',
     role: 'Head of Strategy',
     bio: 'PhD in behavioral economics. Ex-McKinsey, loves early-stage startups.',
-    initials: 'JL',
+    initials: 'MS',
   },
   {
-    name: 'Samira Khan',
+    name: 'Abdul Aziz',
     role: 'Lead Designer',
-    bio: 'Award-winning visual designer with a passion for systems and storytelling.',
-    initials: 'SK',
+    bio: 'Award-winning visual designer with passion for systems and storytelling.',
+    initials: 'AA',
   },
   {
-    name: 'Chris Park',
+    name: 'Shafqat Hussain',
     role: 'Senior Developer',
     bio: 'Full-stack engineer with a focus on performance and clean code.',
-    initials: 'CP',
+    initials: 'CH',
   },
 ];
 
@@ -108,7 +108,7 @@ export default function AboutPage() {
               <span className="text-sm font-medium text-ink-soft uppercase tracking-widest">About</span>
               <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-normal tracking-[-0.02em] text-ink leading-[1.05]">
                 We help bold ideas <br />
-                <span className="font-serif-italic">become real products</span>
+                <span className="font-serif-italic text-blue-600">become real products</span>
               </h1>
               <p className="mt-6 text-lg sm:text-xl text-ink-soft max-w-3xl mx-auto leading-relaxed">
                 Scalentiq AutoWebs is a small, senior team of strategists, designers, and engineers. 
@@ -176,7 +176,7 @@ export default function AboutPage() {
           <Reveal>
             <SectionLabel>By the numbers</SectionLabel>
             <h2 className="mt-4 text-3xl sm:text-4xl font-serif font-normal tracking-[-0.02em] text-ink leading-[1.1]">
-              Real results, <span className="font-serif-italic">real trust</span>.
+              Real results, <span className="font-serif-italic text-blue-600">real trust</span>.
             </h2>
           </Reveal>
           <div className="mt-10 glass-panel rounded-3xl p-6 sm:p-10 grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -201,7 +201,7 @@ export default function AboutPage() {
           <Reveal>
             <SectionLabel>Meet the team</SectionLabel>
             <h2 className="mt-4 text-3xl sm:text-4xl font-serif font-normal tracking-[-0.02em] text-ink leading-[1.1]">
-              Senior practitioners <span className="font-serif-italic">who love what they do</span>.
+              Senior practitioners <span className="font-serif-italic text-blue-600">who love what they do</span>.
             </h2>
           </Reveal>
           <Stagger className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12" stagger={0.08}>
@@ -259,14 +259,14 @@ export default function AboutPage() {
         <section className="mt-24 md:mt-32 text-center">
           <Reveal>
             <h2 className="text-3xl sm:text-4xl font-serif font-normal text-ink">
-              Ready to build <span className="font-serif-italic">something great</span>?
+              Ready to build <span className="font-serif-italic text-blue-600">something great</span>?
             </h2>
             <p className="mt-4 text-base sm:text-lg text-ink-soft max-w-xl mx-auto">
               Let’s talk about your next project.
             </p>
             <Link
               href="/#contact"
-              className="inline-block mt-8 glass-pill rounded-full px-8 py-4 text-sm font-medium text-ink hover:bg-white/60 transition border border-ink/10"
+              className="inline-block mt-8 bg-blue-600 rounded-full px-8 py-4 text-sm font-medium text-white hover:bg-blue-70 transition border border-ink/10"
             >
               Get in touch →
             </Link>

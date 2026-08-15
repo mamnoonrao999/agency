@@ -18,7 +18,7 @@ export default function Testimonials() {
         <Reveal>
           <SectionLabel>Testimonials</SectionLabel>
           <h2 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-serif font-normal tracking-[-0.02em] text-ink leading-[1.1] max-w-3xl">
-            Loved by the <span className="font-serif-italic font-normal">founders</span> we work with.
+            Loved by the <span className="font-serif-italic font-normal text-blue-600">founders</span> we work with.
           </h2>
         </Reveal>
         <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 mt-10 md:mt-16" stagger={0.12}>

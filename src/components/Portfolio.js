@@ -155,13 +155,13 @@ const works = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="py-16 sm:py-20 md:py-28 lg:py-8 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5 md:gap-8 mb-10 md:mb-16">
           <Reveal>
             <SectionLabel>Portfolio</SectionLabel>
             <h2 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-serif font-normal tracking-[-0.02em] text-ink leading-[1.1] max-w-2xl">
-              Selected work, <span className="font-serif-italic font-normal">real outcomes.</span>
+              Selected work, <span className="font-serif-italic font-normal text-blue-600">real outcomes.</span>
             </h2>
           </Reveal>
           <motion.a
@@ -170,7 +170,7 @@ export default function Portfolio() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.04 }}
-            className="glass-pill inline-flex items-center gap-2 text-ink font-medium px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-sm sm:text-base self-start lg:self-auto"
+            className="bg-blue-600 inline-flex items-center gap-2 text-white font-medium px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-sm sm:text-base self-start lg:self-auto"
           >
             View all projects <ArrowUpRight className="w-4 h-4" />
           </motion.a>

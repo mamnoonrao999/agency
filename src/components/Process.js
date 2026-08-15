@@ -52,7 +52,7 @@ export default function Process() {
         <Reveal variants={scaleIn} className="glass-dark rounded-[2rem] p-5 sm:p-8 lg:p-16 text-white">
           <SectionLabel>Process</SectionLabel>
           <h2 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl font-serif font-normal tracking-[-0.02em] leading-[1.1] max-w-3xl">
-            A simple <span className="font-serif-italic font-normal text-white/90">four-step</span> way of working.
+            A simple <span className="font-serif-italic font-normal text-blue-600">four-step</span> way of working.
           </h2>
 
           {/* ─── Grid with continuous line ─── */}

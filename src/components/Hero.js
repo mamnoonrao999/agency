@@ -56,7 +56,7 @@ export default function Hero() {
             >
               <a
                 href="/audit"
-                className="group inline-flex items-center gap-2 glass-pill rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-medium text-ink hover:bg-white/60 transition-all duration-300 border border-ink/10"
+                className="group inline-flex items-center gap-2 bg-blue-600 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-medium text-white hover:bg-blue-700 transition-all duration-300 hover:scale-102"
               >
                 Get My Free Website Audit
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:rotate-45" />
@@ -85,7 +85,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.0, duration: 0.6, ease: EASE }}
-        className="w-full border-t border-ink/5 py-3 sm:py-6 overflow-hidden px-4 sm:px-6 lg:px-8"
+        className="w-full border-y border-ink/5 py-3 sm:py-6 overflow-hidden px-4 sm:px-6 lg:px-8"
       >
         <motion.div
           className="flex gap-3 sm:gap-6 lg:gap-12 whitespace-nowrap items-center"

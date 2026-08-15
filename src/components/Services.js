@@ -15,7 +15,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="service" className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+    <section id="service" className="py-16 sm:py-20 md:py-28 lg:py-8 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5 md:gap-8 mb-10 md:mb-16">
           <Reveal>
