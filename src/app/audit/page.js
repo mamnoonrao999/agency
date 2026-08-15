@@ -149,7 +149,7 @@ function CountUp({ value, duration = 1.2, className = '' }) {
       }
     };
     requestAnimationFrame(animate);
-    return () => {};
+    return () => { };
   }, [value, duration]);
 
   return <span className={className}>{count}</span>;
@@ -193,6 +193,10 @@ function AuditContent() {
     loadAudit();
   }, [url]);
 
+  const handleClose = (e) => {
+    router.push("/");
+  };
+
   if (!url) {
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -201,11 +205,24 @@ function AuditContent() {
       }
     };
 
+
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
-        <div className="max-w-md w-full glass-panel rounded-3xl p-8 text-center">
-          <h1 className="text-3xl sm:text-4xl font-serif font-normal text-ink">Website Audit</h1>
+        <div className="max-w-md w-full glass-panel rounded-3xl p-8 text-center relative">
+          {/* Close button — top‑right, absolute */}
+          <button
+            onClick={handleClose}
+            className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-red-900/10 hover:bg-red-900/20 text-red-900 transition-all duration-200"
+            aria-label="Close"
+          >
+            ✕
+          </button>
+
+          <h1 className="text-3xl sm:text-4xl font-serif font-normal text-ink pr-8">
+            Website Audit
+          </h1>
           <p className="mt-2 text-ink-soft">Enter your website URL to get a complete SEO + AI visibility report.</p>
+
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
             <input
               type="url"
@@ -399,7 +416,7 @@ function AuditContent() {
               )}
               {allIssues.length > 0 && (
                 <> However, <strong className="text-ink">{allIssues.length} issues</strong> need attention.
-                Focus on {allIssues.filter(i => i.severity === 'critical' || i.severity === 'high').slice(0, 2).map(i => `"${i.title}"`).join(' and ')} to see immediate improvements.</>
+                  Focus on {allIssues.filter(i => i.severity === 'critical' || i.severity === 'high').slice(0, 2).map(i => `"${i.title}"`).join(' and ')} to see immediate improvements.</>
               )}
               {allIssues.length === 0 && <> No critical issues found – your site is well‑optimized. 🚀</>}
             </p>
@@ -646,11 +663,10 @@ function AuditContent() {
                     <button
                       key={idx}
                       onClick={() => setCurrentPageIndex(idx)}
-                      className={`h-2.5 rounded-full transition-all ${
-                        idx === currentPageIndex
-                          ? 'w-8 bg-ink'
-                          : 'w-2.5 bg-ink/20 hover:bg-ink/40'
-                      }`}
+                      className={`h-2.5 rounded-full transition-all ${idx === currentPageIndex
+                        ? 'w-8 bg-ink'
+                        : 'w-2.5 bg-ink/20 hover:bg-ink/40'
+                        }`}
                       aria-label={`Go to page ${idx + 1}`}
                     />
                   ))}
