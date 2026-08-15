@@ -31,7 +31,7 @@ export default function Page() {
           <Nav />
           <Hero />
           {/* <Marquee /> */}
-          <About />
+          {/* <About /> */}
           <ProblemSection />
           <Services />
           <Process />

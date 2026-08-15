@@ -25,7 +25,7 @@ const painPoints = [
 
 export default function ProblemSection() {
   return (
-    <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-ink/[0.02] border-y border-ink/5">
+    <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-ink/[0.02]">
       <div className="mx-auto max-w-7xl">
         <div className="text-center max-w-3xl mx-auto">
           <Reveal>

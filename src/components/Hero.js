@@ -55,7 +55,7 @@ export default function Hero() {
               className="mt-6 sm:mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4"
             >
               <a
-                href="#contact"
+                href="/audit"
                 className="group inline-flex items-center gap-2 glass-pill rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-medium text-ink hover:bg-white/60 transition-all duration-300 border border-ink/10"
               >
                 Get My Free Website Audit
