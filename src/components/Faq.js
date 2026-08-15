@@ -8,7 +8,7 @@ import SectionLabel from './SectionLabel';
 
 const faqs = [
   {
-    q: 'What services does GrowthStack Studio offer?',
+    q: 'What services does Scalentiq AutoWebs offer?',
     a: 'We offer Brand Strategy, Web Design & Development, Product UI/UX, Visual Identity, Motion & 3D, and SEO & Growth – a full‑stack creative agency.',
   },
   {
