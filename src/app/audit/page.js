@@ -35,17 +35,18 @@ import { EASE } from '../../components/motion-kit';
 
 // ─── Helpers ──────────────────────────────────────────
 function scoreColor(score) {
-  if (score == null) return '#b0a8a0';
-  if (score >= 80) return '#b8956a';
-  if (score >= 60) return '#c4a882';
-  if (score >= 50) return '#d4b896';
-  return '#e0d0c0';
+  if (score == null) return '#ffffff';
+  if (score >= 51) return '#1E88E5';
+  if (score <= 50) return '#1E88E5';
+  // if (score >= 60) return '#1E88E5';
+  // if (score >= 50) return '#26C6DA';
+  return '#ffffff';
 }
 
 function Badge({ tone = 'warm', children }) {
   const tones = {
     warm: 'bg-ink/5 text-ink border border-ink/10',
-    gold: 'bg-[#b8956a]/10 text-[#b8956a] border border-[#b8956a]/20',
+    gold: 'bg-[#1E88E5]/10 text-[#1E88E5] border border-[#1E88E5]/20',
     ink: 'bg-ink/10 text-ink border border-ink/20',
   };
   return (
@@ -67,7 +68,7 @@ function LoadingState() {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center">
-        <Loader2 className="w-8 h-8 text-[#b8956a] animate-spin mx-auto mb-4" />
+        <Loader2 className="w-8 h-8 text-[#1E88E5] animate-spin mx-auto mb-4" />
         <div className="text-lg font-semibold text-ink">Running Your Audit…</div>
         <div className="text-sm text-ink-soft mt-1">Analyzing your website</div>
       </div>
@@ -117,7 +118,7 @@ function Donut({ value, color }) {
             animationBegin={300}
           >
             <Cell key="score" fill={color} />
-            <Cell key="remaining" fill="#e8e0d8" />
+            <Cell key="remaining" fill="#d8d9e8" />
           </Pie>
         </PieChart>
       </ResponsiveContainer>
@@ -329,7 +330,7 @@ function AuditContent() {
         >
           <button
             onClick={() => router.push('/')}
-            className="inline-flex items-center gap-2 text-sm font-medium text-ink-soft hover:text-ink transition glass-pill rounded-full px-4 py-2 border border-ink/10"
+            className="inline-flex items-center gap-2 text-sm font-medium text-white transition bg-blue-600 rounded-full px-4 py-2 hover:scale-105 cursor-pointer"
           >
             <ArrowLeft size={16} /> Back to Site
           </button>
@@ -350,10 +351,10 @@ function AuditContent() {
           className="mb-8"
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal tracking-[-0.02em] text-ink leading-[1.05]">
-            Website <span className="font-serif-italic">Audit</span>
+            Website <span className="font-serif-italic text-blue-600">Audit</span>
           </h1>
           <p className="mt-2 text-base sm:text-lg text-ink-soft">
-            Complete SEO + AI visibility analysis for <span className="font-medium text-ink">{seoData?.url || url}</span>
+            Complete SEO + AI visibility analysis for <span className="font-medium text-blue-600">{seoData?.url || url}</span>
           </p>
         </motion.div>
 
@@ -449,7 +450,7 @@ function AuditContent() {
                 >
                   <CartesianGrid strokeDasharray="3 3" horizontal={false} opacity={0.1} />
                   <XAxis type="number" domain={[0, 100]} axisLine={false} tickLine={false} fontSize={11} />
-                  <YAxis type="category" dataKey="name" axisLine={false} tickLine={false} width={80} fontSize={11} tick={{ fill: '#6b6b6b' }} />
+                  <YAxis type="category" dataKey="name" axisLine={false} tickLine={false} width={80} fontSize={11} tick={{ fill: '#5c5e79' }} />
                   <Tooltip formatter={(value) => `${value}/100`} />
                   <Bar dataKey="value" radius={[0, 6, 6, 0]} barSize={14}>
                     {categoryData.map((d, idx) => (
@@ -478,7 +479,7 @@ function AuditContent() {
                 >
                   <CartesianGrid strokeDasharray="3 3" horizontal={false} opacity={0.1} />
                   <XAxis type="number" domain={[0, 100]} axisLine={false} tickLine={false} fontSize={11} />
-                  <YAxis type="category" dataKey="name" axisLine={false} tickLine={false} width={110} fontSize={11} tick={{ fill: '#6b6b6b' }} />
+                  <YAxis type="category" dataKey="name" axisLine={false} tickLine={false} width={110} fontSize={11} tick={{ fill: '#003060' }} />
                   <Tooltip formatter={(value) => `${value}/100`} />
                   <Bar dataKey="value" radius={[0, 6, 6, 0]} barSize={14}>
                     {categoryData.map((d, idx) => (
@@ -501,9 +502,9 @@ function AuditContent() {
         >
           <GlassCard>
             <div className="flex items-center gap-3 mb-4">
-              <CheckCircle2 size={24} className="text-[#b8956a]" />
+              <CheckCircle2 size={24} className="text-[#1E88E5]" />
               <h3 className="text-lg font-semibold text-ink">All Strengths</h3>
-              <span className="ml-auto text-sm bg-[#b8956a]/10 text-[#b8956a] px-3 py-1 rounded-full font-medium">
+              <span className="ml-auto text-sm bg-blue-600/10 text-blue-600 px-3 py-1 rounded-full font-medium">
                 {allStrengths.length} found
               </span>
             </div>
@@ -512,7 +513,7 @@ function AuditContent() {
               {allStrengths.map((s, idx) => (
                 <div key={idx} className="rounded-xl p-3 border border-ink/5">
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 size={16} className="text-[#b8956a] mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 size={16} className="text-[#1E88E5] mt-0.5 flex-shrink-0" />
                     <div>
                       <div className="font-medium text-sm text-ink">{s.title}</div>
                       {s.detail && <div className="text-xs text-ink-soft mt-0.5">{s.detail}</div>}
@@ -542,7 +543,7 @@ function AuditContent() {
                       <div className="font-medium text-sm text-ink">{issue.title}</div>
                       {issue.explanation && <div className="text-xs text-ink-soft mt-0.5">{issue.explanation}</div>}
                       {issue.recommended_fix && (
-                        <div className="text-xs text-[#b8956a] mt-1">💡 {issue.recommended_fix}</div>
+                        <div className="text-xs text-[#1E88E5] mt-1">💡 {issue.recommended_fix}</div>
                       )}
                       <div className="flex flex-wrap gap-1 mt-1">
                         {issue.severity && <Badge tone="ink">{issue.severity}</Badge>}
@@ -602,14 +603,14 @@ function AuditContent() {
                         animationDuration={900}
                         animationBegin={0}
                       >
-                        <PolarGrid stroke="#d0c8c0" />
-                        <PolarAngleAxis dataKey="metric" tick={{ fill: '#6b6b6b', fontSize: 11 }} />
+                        <PolarGrid stroke="#96c1d7" />
+                        <PolarAngleAxis dataKey="metric" tick={{ fill: '#1700aa', fontSize: 11 }} />
                         <PolarRadiusAxis angle={30} domain={[0, 100]} tick={{ fontSize: 10 }} />
                         <Radar
                           name="Score"
                           dataKey="value"
-                          stroke="#b8956a"
-                          fill="#c4a882"
+                          stroke="#1E88E5"
+                          fill="#1E88E5"
                           fillOpacity={0.35}
                           animationDuration={900}
                           animationBegin={0}
