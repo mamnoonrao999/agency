@@ -16,6 +16,7 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import Faq from '@/components/Faq';
 import ProblemSection from '@/components/ProblemSection';
+import SolutionsSection from '@/components/SolutionsSection';
 
 export default function Page() {
   return (
@@ -33,6 +34,7 @@ export default function Page() {
           {/* <Marquee /> */}
           {/* <About /> */}
           <ProblemSection />
+          <SolutionsSection />
           <Services />
           <Process />
           <Portfolio />
